@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML PracticeSet</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar .tabList {
+        background-color: rgb(5, 44, 128);
+        display: flex;
+        flex-direction: row;
+        width: -webkit-fill-available;
+        justify-content: space-evenly;
+        align-items: center;
+        height: clamp(35px, 45px, 55px);
+        position: fixed;
+        z-index: 2;
+      }
+      .tabList li {
+        list-style: none;
+        color: white;
+      }
+      h1,
+      .h1 {
+        font-size: 40px;
+        padding-top: 60px;
+      }
+      h2,
+      .h2 {
+        font-size: 30px;
+      }
+      h3,
+      .h3 {
+        font-size: 25px;
+      }
+      .image-placeholder {
+        width: 300px;
+        height: 200px;
+        background-color: #ccc;
+        border: 1px solid #888;
+      }
+
+      .image-placeholder2 {
+        width: 300px;
+        height: 200px;
+        background-color: #2c2a2a;
+        border: 1px solid #888;
+      }
+
+      .image-placeholder3 {
+        width: 300px;
+        height: 200px;
+        background-color: #3664a0;
+        border: 1px solid #888;
+      }
+
+      .article1 {
+        position: relative;
+      }
+      .article1 .image-placeholder {
+        position: relative;
+      }
+      .article1 .details {
+        position: absolute;
+        margin-top: 20px;
+      }
+      .article1 h3 {
+        position: absolute;
+      }
+
+      .stickyImg,
+      img {
+        position: sticky;
+        left: 75%;
+        top: 60px;
+        border-radius: 50%;
+      }
+
+      .article2 {
+        position: relative;
+        margin-top: 150px;
+      }
+      .article2 .image-placeholder2 {
+        position: absolute;
+      }
+
+      .article2 h3 {
+        position: absolute;
+      }
+
+      .article2 .details {
+        position: absolute;
+      }
+
+      .article3 {
+        position: relative;
+        margin-top: 450px;
+      }
+      .article3 .image-placeholder3 {
+        position: relative;
+      }
+      .article2 h3 {
+        position: absolute;
+      }
+
+      .article2 .details {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="tabList">
+        <li>Home</li>
+        <li>Blogs</li>
+        <li>Project</li>
+        <li>About us</li>
+      </ul>
+    </nav>
+    <h1 class="h1">Batch: Internees-001</h1>
+    <h2 class="h3">Batch size: 7</h2>
+    <h3 class="h2">Year: 2024</h3>
+
+    <div class="stickyImg">
+      <img src="./Ahmad.jpg" alt="profile pic" width="200px" />
+    </div>
+
+    <article class="article1">
+      <div class="image-placeholder"></div>
+
+      <h3 class="h2">Ahmad</h3>
+      <p class="details">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+        debitis fugiat laboriosam aliquam possimus nemo, labore deserunt illo
+        perspiciatis eveniet in voluptatibus laborum culpa reiciendis quam harum
+        quasi hic dicta? Quidem assumenda error doloremque.
+      </p>
+    </article>
+
+    <article class="article2">
+      <div class="image-placeholder2"></div>
+
+      <h3 class="h2">Hamza</h3>
+      <p class="details">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+        debitis fugiat laboriosam aliquam possimus nemo, labore deserunt illo
+        perspiciatis eveniet in voluptatibus laborum culpa reiciendis quam harum
+        quasi hic dicta? Quidem assumenda error doloremque.
+      </p>
+    </article>
+
+    <article class="article3">
+      <div class="image-placeholder3"></div>
+
+      <h3 class="h2">Zeeshan</h3>
+      <p class="details">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+        debitis fugiat laboriosam aliquam possimus nemo, labore deserunt illo
+        perspiciatis eveniet in voluptatibus laborum culpa reiciendis quam harum
+        quasi hic dicta? Quidem assumenda error doloremque.
+      </p>
+    </article>
+  </body>
+</html>
