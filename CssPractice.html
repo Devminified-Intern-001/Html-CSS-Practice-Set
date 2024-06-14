@@ -58,6 +58,7 @@
       .dropdown-container:hover .dropdown-content {
         display: flex;
       }
+
       .box-container {
         width: 100%;
         font-size: 0;
@@ -69,6 +70,27 @@
         display: inline-block;
         box-sizing: border-box;
         vertical-align: top;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 50px;
+      }
+      .item {
+        background-color: lightgrey;
+        padding: 20px;
+        flex: 1 1 100px;
+      }
+      .flex-container > :nth-child(2) {
+        background-color: lightblue;
+      }
+      .flex-container > :nth-last-child(2) {
+        background-color: lightgreen;
+      }
+      .flex-container > :nth-last-child(1) {
+        background-color: rgb(88, 248, 208);
       }
     </style>
   </head>
@@ -88,6 +110,15 @@
     <div class="box-container">
       <div class="box"></div>
       <div class="box"></div>
+    </div>
+
+    <div class="flex-container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
     </div>
   </body>
 </html>
